@@ -7,6 +7,7 @@ plugins {
 	kotlin("plugin.spring") version "1.4.32"
 	kotlin("plugin.jpa") version "1.4.32"
 	kotlin("plugin.allopen") version "1.4.32"
+	kotlin("kapt") version "1.4.32"
 }
 
 group = "com.kotlin-spring"
@@ -25,6 +26,7 @@ dependencies {
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 	implementation("org.junit.jupiter:junit-jupiter:5.7.0")
+	kapt("org.springframework.boot:spring-boot-configuration-processor")
 	developmentOnly("org.springframework.boot:spring-boot-devtools")
 	runtimeOnly("com.h2database:h2")
 	testImplementation("org.springframework.boot:spring-boot-starter-test") {
