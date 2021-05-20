@@ -27,6 +27,7 @@ dependencies {
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 	implementation("org.junit.jupiter:junit-jupiter:5.7.0")
 	kapt("org.springframework.boot:spring-boot-configuration-processor")
+	compileOnly("org.springframework.boot:spring-boot-configuration-processor")
 	developmentOnly("org.springframework.boot:spring-boot-devtools")
 	runtimeOnly("com.h2database:h2")
 	testImplementation("org.springframework.boot:spring-boot-starter-test") {
